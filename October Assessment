@@ -1,0 +1,25 @@
+#Question 1
+#Student name: Katie Higgins
+
+taylorSwiftSongs = ["Love Story","Shake It Off", "Delicate","Wildest Dreams","All Too Well","Blank Space","You Belong With Me","Red","22" ] #Lines 4 and 5 are answers to question (a)
+print(taylorSwiftSongs)
+
+song = input("Please enter the Taylor Swift song you're looking for: ")
+if song in taylorSwiftSongs:
+    print("The song",song, "is on the list")
+else:
+    print("The song",song, "is not on the list")#Lines 7, 8, 9,10 and 11 are answers to question (b)
+    
+#answer to question (c)
+
+#Question 2
+#Student name: Katie Higgins
+
+print("Welcome to Tempature Alert System")
+number = int(input("Enter tempature value in degrees celsius: "))
+if number <20:
+    print("Too cold turn up heating.")
+elif number > 20 and number < 24:
+    print("Tempature just right.")
+else:
+    print("Too warm.Turn down heating.")#lines 4 to 11 answers to question 2
