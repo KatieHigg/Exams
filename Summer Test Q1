@@ -1,0 +1,19 @@
+#Question 1
+#Student Name:Katie Higgins
+
+print("Welcome to the driving licence eligiblity checker")#(i)
+
+name=input("What is your name?")#(v)
+
+age=int(input("What age are you?"))#(ii)This line is asking you to input a number as a variable
+
+if (age >=17 and age <=74):#(vi)
+    print("You entered",age)#(iii)
+    print(name,"you are entitled to apply for a driving licence.")
+elif (age >=75):#(vi)
+    print("You entered",age)#(iii)
+    print(name,"you are entitled to apply for a three-year driving licence.")   
+else: #(vi)
+     print("You entered",age)#(iii)
+     print(name,"you are not entitled to apply for a driving licence.")#(iv)
+    
