@@ -1,0 +1,61 @@
+#Question 1 (a)
+#Katie Higgins
+
+print("This program can find the perimeter or area of a quadrilateral")#(i)
+length = float(input("Please enter the length: "))#(iii)
+width = float(input("Please enter the width: "))#(iii)
+name = input("Please enter your user name: ")#(ii)
+
+choice = input("Do you want to find the (p)erimeter or (a)rea? ")
+if choice == "p":
+    print("A quadrilateral with a length of",length, "and a width of",width,"has a perimeter of" ,2*length + 2*width)#(v) + (vi)
+elif choice == "a":
+    print("A quadrilateral with a length of",length, "and a width of",width,"has an area of" ,length*width)#(v)
+print("Thank you for using the program",name)#(ii)
+
+#Question 1 (b)
+#Katie Higgins
+
+import random
+
+player = input("Enter rock, paper or scissors: ")#(i)
+
+computer_options = ["rock", "paper", "scissors"]
+
+
+computer_choice = computer_options [random.randint(0,2)]
+print("Player chose: ",player) #(i)
+print("Computer chose: ", computer_choice)#(i)
+
+if computer_choice == "rock" and player == "scissors":#(ii)
+    print("Computer wins")
+elif computer_choice == "paper" and player == "scissors":
+    print("Player wins")
+elif computer_choice == "scissors" and player == "scissors":
+    print("Draw!")
+elif computer_choice == "paper" and player == "rock":
+    print("Computer wins")
+elif computer_choice == "scissors" and player == "rock":
+    print("Player wins")
+elif computer_choice == "rock" and player == "rock":
+    print("Draw!")
+elif computer_choice == "scissors" and player == "paper":
+    print("Computer wins")
+elif computer_choice == "rock" and player == "paper":
+    print("Player wins")
+elif computer_choice == "paper" and player == "paper":
+    print("Draw!")
+else:
+    print("invalid")
+    
+#Question 2
+#Katie Higgins
+
+def concert():
+    vip = int(input("Number of VIP tickets sold: "))
+    reg = int(input("Number of regular tickets sold: "))
+    budget = int(input("Number of budget tickets sold: "))
+    total = (vip*150, reg*75, budget*40)
+concert(total)
+
+#(??????)
